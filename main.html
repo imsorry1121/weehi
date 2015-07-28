@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<title>Weehi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Stylesheets -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="http://plugins.adchsm.me/slidebars/scripts/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slidebars.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_custom.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation" data-role="navbar">
+		<!-- Left Control -->
+		<div class="sb-toggle-left navbar-left">
+			<div class="navicon-line"></div>
+			<div class="navicon-line"></div>
+			<div class="navicon-line"></div>
+		</div><!-- /.sb-control-left -->
+		<div class="navbar-title">
+			<h4 class="center">Weehi</h4>
+		</div>
+	</nav>
+	<!-- Slidebar -->
+	<div class="sb-slidebar sb-left sb-style-overlay">
+		<nav>
+<!-- 			<ul class="sb-menu nav nav-tabs">
+				<li class="sb-close active"><a data-toggle="tab" href="#page_msg_collection"><img src="img/ic_tab_favorite_unselected.png"></a></li>
+				<li class="sb-close"><a data-toggle="tab" href="#page_update_list"><img src="img/ic_tab_update_unselected.png"></a></li>
+				<li class="sb-close"><a data-toggle="tab" href="#page_care_list"><img src="img/ic_tab_care_unselected.png"></a></li>
+				<li class="sb-close"><a data-toggle="tab" href="#page_about_me"><img src="img/ic_tab_about_me_unselected.png"></a></li>
+			</ul> -->
+			<ul class="nav nav-tabs sb-menu">
+				<li class="" id="slidebar_me">
+					<a href="#page_about_me" data-toggle="tab">
+						<div class="col-xs-4">
+							<img class="img-circle img-responsive img-me" src="https://avatars0.githubusercontent.com/u/1728890?v=3&s=460" alt="Profile Picture">
+						</div>
+						<div class="col-xs-8">
+							<h3>Ken Chen</h3>
+						</div>
+					</a>
+				</li>
+				<li class="" id="slidebar_about_me"><a data-toggle="tab" href="#page_about_me"><img src="img/drawable-mdpi/ic_action_person.png">關於我</a></li>
+				<li class="" id="slidebar_care_list"><a data-toggle="tab" href="#page_care_list"><img src="img/drawable-mdpi/ic_action_group.png">我的朋友</a></li>
+				<li class="" id="slidebar_invite_friend"><a data-toggle="tab" href="#page_invite_friend"><img src="img/drawable-mdpi/ic_action_add_person.png">邀請好友</a></li>
+				<li class="" id="slidebar_msg_collection"><a data-toggle="tab" href="#page_msg_collection"><img src="img/ic_action_view_as_list.png">訊息收藏庫</a></li>
+				<li class="" id="slidebar_setting"><a data-toggle="tab" href="#page_setting"><img src="img/drawable-mdpi/ic_action_settings.png">帳號設定</a></li>
+				<li class="" id="slidebar_feedback"><a data-toggle="tab" href="#page_feedback"><img src="img/drawable-mdpi/ic_action_read.png">意見回饋</a></li>
+				<li class="" id="slidebar_logout"><a data-toggle="tab" href=""><img src="img/drawable-mdpi/ic_action_undo.png">登出</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- Content -->
+	<div class="tab-content content">
+		<!-- page msg collection -->
+		<div id="page_msg_collection" class="tab-pane fade bg-gray">
+			<ul class="listview">
+				<li class="row listitem listitem-msgcollection">
+					<div class="col-xs-2 listitem-user2"><img class="img-circle" src="img/ic_send_gift.png"><div class="listitem-time-front">6分鐘前</div></div>
+					<div class="col-xs-10 listitem-content">
+						<div class="row bg-conversation">
+							<div class="col-xs-10 listitem-msg">Holaman</div>
+							<div class="col-xs-1 listitem-remove"><img src="img/ic_trash.png"></div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--  page update list-->
+		<div id="page_update_list" class="tab-pane fade in active">
+			<ul class="listview" id="scroller">
+				<li class="row listitem listitem-update">
+					<a href="friend.html">
+						<div class="col-xs-2 "><img class="img-circle" src="img/ic_send_gift.png"></div>
+						<div class="col-xs-10 listitem-content">
+							<div class="row">
+								<div class="col-xs-9 listitem-name">Holaman</div>
+								<div class="col-xs-3 listitem-time">5小時前</div>
+								<div class="col-xs-9 listitem-msg">Yo this is the status.</div>
+								<div class="col-xs-3 listitem-msgtype"><img src="img/ic_knock_gift.png"></div>
+							</div>
+						</div>
+					</a>
+
+				</li>
+				<li class="row listitem listitem-update">
+					<a href="friend.html">
+						<div class="col-xs-2 "><img class="img-circle" src="img/ic_send_gift.png"></div>
+						<div class="col-xs-10 listitem-content">
+							<div class="row">
+								<div class="col-xs-9 listitem-name">Holaman</div>
+								<div class="col-xs-3 listitem-time">5小時前</div>
+								<div class="col-xs-9 listitem-msg">Yo this is the status.</div>
+								<div class="col-xs-3 listitem-msgtype"><img src="img/ic_knock_gift.png"></div>
+							</div>
+
+						</div>
+					</a>
+
+				</li>
+				<li class="row listitem listitem-update">
+					<a href="friend.html">
+						<div class="col-xs-2 "><img class="img-circle" src="img/ic_send_gift.png"></div>
+						<div class="col-xs-10 listitem-content">
+							<div class="row">
+								<div class="col-xs-9 listitem-name">Holaman</div>
+								<div class="col-xs-3 listitem-time">5小時前</div>
+								<div class="col-xs-9 listitem-msg">Yo this is the status.</div>
+								<div class="col-xs-3 listitem-msgtype"><img src="img/ic_knock_gift.png"></div>
+							</div>
+
+						</div>
+					</a>
+
+				</li>
+				<li class="row listitem listitem-update">
+					<a href="friend.html">
+						<div class="col-xs-2 "><img class="img-circle" src="img/ic_send_gift.png"></div>
+						<div class="col-xs-10 listitem-content">
+							<div class="row">
+								<div class="col-xs-9 listitem-name">Holaman</div>
+								<div class="col-xs-3 listitem-time">5小時前</div>
+								<div class="col-xs-9 listitem-msg">Yo this is the status.</div>
+								<div class="col-xs-3 listitem-msgtype"><img src="img/ic_knock_gift.png"></div>
+							</div>
+
+						</div>
+					</a>
+
+				</li>
+				<li class="row listitem listitem-update">
+					<a href="friend.html">
+						<div class="col-xs-2 "><img class="img-circle" src="img/ic_send_gift.png"></div>
+						<div class="col-xs-10 listitem-content">
+							<div class="row">
+								<div class="col-xs-9 listitem-name">Holaman</div>
+								<div class="col-xs-3 listitem-time">5小時前</div>
+								<div class="col-xs-9 listitem-msg">Yo this is the status.</div>
+								<div class="col-xs-3 listitem-msgtype"><img src="img/ic_knock_gift.png"></div>
+							</div>
+
+						</div>
+					</a>
+
+				</li>
+				<li class="row listitem listitem-update">
+					<a href="friend.html">
+						<div class="col-xs-2 "><img class="img-circle" src="img/ic_send_gift.png"></div>
+						<div class="col-xs-10 listitem-content">
+							<div class="row">
+								<div class="col-xs-9 listitem-name">Holaman</div>
+								<div class="col-xs-3 listitem-time">5小時前</div>
+								<div class="col-xs-9 listitem-msg">Yo this is the status.</div>
+								<div class="col-xs-3 listitem-msgtype"><img src="img/ic_knock_gift.png"></div>
+							</div>
+
+						</div>
+					</a>
+
+				</li>
+				<li class="row listitem listitem-update">
+					<a href="friend.html">
+						<div class="col-xs-2 "><img class="img-circle" src="img/ic_send_gift.png"></div>
+						<div class="col-xs-10 listitem-content">
+							<div class="row">
+								<div class="col-xs-9 listitem-name">Holaman</div>
+								<div class="col-xs-3 listitem-time">5小時前</div>
+								<div class="col-xs-9 listitem-msg">Yo this is the status.</div>
+								<div class="col-xs-3 listitem-msgtype"><img src="img/ic_knock_gift.png"></div>
+							</div>
+
+						</div>
+					</a>
+
+				</li>
+			</ul>
+		</div>
+		<!-- page care list -->
+		<div id="page_care_list" class="tab-pane fade">
+			<ul class="listview">
+				<li class="row listitem listitem-care">
+					<a href="friend.html">
+						<div class="col-xs-1 bar bar-blue"></div>
+						<div class="col-xs-2 "><img class="img-circle" src="img/ic_weehi_icon.png"></div>
+						<div class="col-xs-9 listitem-content">
+							<div class="row">
+								<div class="col-xs-6 listitem-name">Holaman<img class="mood" src="img/ic_mood_happy.png"></div>
+								<div class="col-xs-6 listitem-time">上次時間</div>
+								<div class="col-xs-12 listitem-status">Yo this is the status.</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- page about me -->
+		<div id="page_about_me" class="tab-pane fade">
+			<div class="aboutme-top">
+				<div class="row">
+					<div class="col-xs-5"><img class="img-circle img-me" src="img/ic_weehi_icon.png"></div>
+					<div class="col-xs-7 aboutme-topright">
+						<div class="row aboutme-name">Holaman<img class="mood" src="img/ic_mood_happy.png"></div>
+						<div class="row aboutme-status"><img class="invert" src="img/ic_edit.png">Weehi!微微的嗨！</div>
+						<div class="row aboutme-mood">
+							<div class="col-xs-3">喜悅</div>
+							<div class="col-xs-3">生氣</div>
+							<div class="col-xs-3">傷心</div>
+							<div class="col-xs-3">美好</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="aboutme-down bg-gray">
+				<ul class="listview">
+					<li class="row listitem listitem-msgcollection">
+						<div class="col-xs-2 listitem-user2"><img class="img-circle" src="img/ic_send_gift.png"><div class="listitem-time-front">6分鐘前</div></div>
+						<div class="col-xs-10 listitem-content">
+							<div class="row bg-conversation">
+								<div class="col-xs-10 listitem-msg">
+									<div class="aboutme-msg">This is the content</div>
+									<div class="aboutme-collect"><img class="collect"src="img/ic_action_favorite_null.png">收藏</div>
+								</div>
+								<div class="col-xs-1 aboutme-msgphoto"><img src="img/ic_knock_funny.jpg"></div>
+							</div>
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- page invite friend -->
+		<div id="page_invite_friend" class="tab-pane fade">
+			<div class="input-group search_bar">
+				<input type="text" class="form-control" aria-label="Friend's name" value="請輸入其他使用者暱稱或電話號碼">
+				<span class="input-group-addon"><i class="fa fa-search"></i></span>
+				<!-- <span class="input-group-addon"><i class="fa fa-check"></i></span> -->
+			</div>
+			<ul class="listview">
+				<li class="row listitem">
+					<div class="col-xs-2"><img class="img-circle" src="img/ic_weehi_icon.png"></div>
+					<div class="col-xs-7 listitem-content ">
+						<div class="row">
+							<div class="col-xs-6 listitem-name name-middle">Holaman</div>
+						</div>
+					</div>
+					<div class="col-xs-3 add_person"><img class="img-circle add_person-btn" src="img/drawable-mdpi/ic_action_add_person.png"></div>
+				</li>
+			</ul>
+		</div>
+		<!-- page setting -->
+		<div id="page_setting" class="tab-pane fade bg-gray">
+			<div class="setting-top">
+				<div class="input-group	">
+					<span class="input-group-addon">暱稱</i></span>
+					<input type="text" class="form-control" aria-label="Nickname" value="Name">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">e-mail</i></span>
+					<input type="text" class="form-control" aria-label="Email" value="xxx@gmail.com">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon">密碼</i></span>
+					<input type="text" class="form-control" aria-label="Pwd" value="Password">
+				</div>
+			</div>
+			<div class="setting-down">
+				<button type="button" class="btn btn-success btn-lg">確認</button>
+			</div>
+		</div>
+		<!-- page feedback -->
+		<div id="page_feedback" class="tab-pane fade bg-gray">
+			<div class="feedback-top listview bg-white">
+				<div class="row">
+					<div class="col-xs-3">分類：</div>
+					<div class="col-xs-9">
+						<select>
+							<option value="功能建議">功能建議</option>
+							<option value="訊息提供">訊息提供</option>
+						</select>
+					</div>	
+				</div>
+				<div claas="row" style="padding:10px">
+					<div class="col-xs-3">內容：</div>
+					<div class="col-xs-9"><textarea value="請在此輸入您的建議"></textarea></div>
+				</div>
+			</div>
+			<div class="feedback-down">
+				<button type="button" class="btn btn-success btn-lg">確認</button>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!-- Footer -->
+	<footer>
+		<ul class="row nav nav-tabs">
+			<li class="active col-xs-3" id="msg_collection_btn"><a data-toggle="tab" href="#page_msg_collection"><img src="img/ic_tab_favorite_unselected.png"></a></li>
+			<li class="col-xs-3"><a data-toggle="tab" href="#page_update_list"><img src="img/ic_tab_update_unselected.png"></a></li>
+			<li class="col-xs-3"><a data-toggle="tab" href="#page_care_list"><img src="img/ic_tab_care_unselected.png"></a></li>
+			<li class="col-xs-3" id="about_me_btn"><a data-toggle="tab" href="#page_about_me"><img src="img/ic_tab_about_me_unselected.png"></a></li>
+		</ul>
+	</footer>
+
+
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Slidebars -->
+	<script src="js/slidebars.js"></script>
+	<script src="js/iscroll-infinite.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+					// Initiate Slidebars
+					$.slidebars();
+					document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+					$('body').ready(loaded());
+
+				});
+		}) (jQuery);
+	</script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$('a[href^="#"]').on('touchend click', function(e) {
+					e.preventDefault();
+					var id = $(this).attr("href");
+					var offset = 70;
+					var target = $(id).offset().top - offset;
+
+					$('html, body').animate({scrollTop:target}, 500);
+				});
+			});
+		}) (jQuery);
+	</script>
+	<script type="text/javascript">
+		/******************************************************************************
+		 *
+		 * For the sake of keeping the script dependecy free I'm including a custom
+		 * AJAX function. You should probably use a third party plugin
+		 *
+		 */
+		 (function($) {
+		 	$(document).ready(function() {
+
+
+
+		 	});
+		 });
+		</script>
+	</body>
+	</html>

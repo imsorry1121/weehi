@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<title>Weehi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Stylesheets -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="http://plugins.adchsm.me/slidebars/scripts/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slidebars.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_custom.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top sb-slide" role="navigation">
+		<!-- Left Control -->
+		<div class="sb-toggle-left navbar-left">
+			<div class="navicon-line"></div>
+			<div class="navicon-line"></div>
+			<div class="navicon-line"></div>
+		</div><!-- /.sb-control-left -->
+		<div class="navbar-title">
+			<h4 class="center">Weehi</h4>
+		</div>
+	</nav>
+
+	<!-- Content -->
+	<div  id="sb-site" class="content">
+
+		<!-- Site -->
+		<div class="container">
+
+
+
+		</div><!-- /.container -->
+
+	</div><!-- /#sb-site -->
+
+	<!-- Slidebar -->
+	<div class="sb-slidebar sb-left sb-style-overlay">
+		<nav>
+			<ul class="sb-menu">
+				<li class="sb-close">
+					<a href="">
+						<div class="col-xs-4">
+							<img class="img-circle img-responsive img-me" src="https://avatars0.githubusercontent.com/u/1728890?v=3&s=460" alt="Profile Picture">
+						</div>
+						<div class="col-xs-8">
+							<h3>Ken Chen</h3>
+						</div>
+					</a>
+				</li>
+				<li class="sb-close "><a href=""><img src="img/drawable-mdpi/ic_action_person.png">關於我</a></li>
+				<li class="sb-close "><a href=""><img src="img/drawable-mdpi/ic_action_group.png">我的朋友</a></li>
+				<li class="sb-close "><a href=""><img src="img/drawable-mdpi/ic_action_add_person.png">邀請好友</a></li>
+				<li class="sb-close "><a href=""><img src="img/ic_action_view_as_list.png">訊息收藏庫</a></li>
+				<li class="sb-close "><a href=""><img src="img/drawable-mdpi/ic_action_settings.png">帳號設定</a></li>
+				<li class="sb-close "><a href=""><img src="img/drawable-mdpi/ic_action_read.png">意見回饋</a></li>
+				<li class="sb-close "><a href=""><img src="img/drawable-mdpi/ic_action_undo.png">登出</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="row">
+			<div class="col-xs-12">
+			
+				<div class="col-xs-3">
+					<a href="">		
+					<img src="img/ic_tab_favorite_unselected.png"></a>
+				</div>
+
+				<div class="col-xs-3">
+				<a href="">		
+					<img src="img/ic_tab_update_unselected.png">
+					</a>
+				</div>
+				<div class="col-xs-3">
+				<a href="">		
+					<img src="img/ic_tab_care_unselected.png">
+					</a>
+				</div>
+				<div class="col-xs-3">
+				<a href="">		
+					<img src="img/ic_tab_about_me_unselected.png"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Scripts: put some javascipt last to accelerate the loading -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Slidebars -->
+	<script src="js/slidebars.min.js"></script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+					// Initiate Slidebars
+					$.slidebars();
+				});
+		}) (jQuery);
+	</script>
+
+	<!-- Smooth Page Scrolling -->
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$('a[href^="#"]').on('touchend click', function(e) {
+					e.preventDefault();
+					var id = $(this).attr("href");
+					var offset = 70;
+					var target = $(id).offset().top - offset;
+
+					$('html, body').animate({scrollTop:target}, 500);
+				});
+			});
+		}) (jQuery);
+	</script>
+</body>
+</html>

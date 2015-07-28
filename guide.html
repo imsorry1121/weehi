@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<title>Weehi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Stylesheets -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="http://plugins.adchsm.me/slidebars/scripts/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style_custom.css">
+<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .guide_btn{
+    	position: absolute;
+    	height: 60px;
+    	bottom: 10%;
+    	right: 8%;
+    }
+    </style>
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+</head>
+
+<body>
+	 <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide guide-wrapper "><img src="img/guide_step1_front.png"></div>
+            <div class="swiper-slide guide-wrapper"><img src="img/guide_step2_front.png"></div>
+            <div class="swiper-slide guide-wrapper "><img src="img/guide_step3_front.png"><div class="guide_btn">
+            <img  src="img/landing_login.png"></div></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+	<!-- Scripts: put some javascipt last to accelerate the loading -->
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<!-- Smooth Page Scrolling -->
+	   <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });</script>
+
+</body>
+</html>

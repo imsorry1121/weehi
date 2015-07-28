@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<title>Weehi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Stylesheets -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" href="http://plugins.adchsm.me/slidebars/scripts/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/slidebars.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style_custom.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<style>
+		html, body {
+			/*position: relative;*/
+			height: 100%;
+		}
+		body {
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background: #92e3f3; /* Old browsers */
+			background: -moz-linear-gradient(top,  #92e3f3 0%, #36e3e1 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#92e3f3), color-stop(100%,#36e3e1)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #92e3f3 0%,#36e3e1 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #92e3f3 0%,#36e3e1 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #92e3f3 0%,#36e3e1 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #92e3f3 0%,#36e3e1 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92e3f3', endColorstr='#36e3e1',GradientType=0 ); /* IE6-9 */
+		}
+	</style>
+</head>
+
+<body>
+	<div class="register-top"><h4>帳號設定</h4>
+		<div class="register-photo"><img src="img/ic_register_photo2.png"></div>
+	</div>
+	<div class="register-down">
+		<div class="input-group mobile-input">
+			<span class="input-group-addon"><i class="fa fa-mobile-phone"></i></span>
+			<input type="text" class="form-control" aria-label="phone" value="手機">
+		</div>
+		<div class="input-group mobile-input">
+			<span class="input-group-addon"><i class="fa fa-key"></i></span>
+			<input type="text" class="form-control" aria-label="pwd" value="密碼">
+		</div>
+		<div class="input-group mobile-input">
+			<span class="input-group-addon"><i class="fa fa-user"></i></span>
+			<input type="text" class="form-control" aria-label="nickname" value="暱稱">
+		</div>
+		<div class="input-group mobile-input">
+			<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+			<input type="text" class="form-control" aria-label="email" value="e-mail">
+		</div>
+		<div class="input-group mobile-input">
+			<span class="input-group-addon"><i class="fa fa-edit"></i></span>
+			<input type="text" class="form-control" aria-label="status" value="狀態">
+		</div>
+	</div>
+	<div class="register-check"><a href="main.html"><img src="img/ic_register_ok.png"></a></div>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Slidebars -->
+	<script src="js/slidebars.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+					// Initiate Slidebars
+					$.slidebars();
+				});
+		}) (jQuery);
+	</script>
+	<!-- Smooth Page Scrolling -->
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$('a[href^="#"]').on('touchend click', function(e) {
+					e.preventDefault();
+					var id = $(this).attr("href");
+					var offset = 70;
+					var target = $(id).offset().top - offset;
+
+					$('html, body').animate({scrollTop:target}, 500);
+				});
+			});
+		}) (jQuery);
+	</script>
+</body>
+</html>
